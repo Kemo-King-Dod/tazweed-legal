@@ -1,51 +1,88 @@
 <!doctype html>
-<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>سياسة الخصوصية — تطبيق تزويد</title><style>body{font-family:-apple-system,"Segoe UI",Tahoma,Arial,sans-serif;line-height:1.9;max-width:760px;margin:0 auto;padding:24px;color:#1b1b1b;background:#fafafa}h1{font-size:1.6rem}h2{font-size:1.2rem;margin-top:1.6em;border-bottom:1px solid #ddd;padding-bottom:4px}a{color:#0a6b4b}.en{direction:ltr;text-align:left;margin-top:3em;border-top:2px solid #ccc;padding-top:1em}footer{color:#666;font-size:.9rem;margin-top:2em}</style></head>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>سياسة الخصوصية — تطبيق تزويد</title><style>body{font-family:-apple-system,"Segoe UI",Tahoma,Arial,sans-serif;line-height:1.9;max-width:760px;margin:0 auto;padding:24px;color:#1b1b1b;background:#fafafa}h1{font-size:1.6rem}h2{font-size:1.2rem;margin-top:1.6em;border-bottom:1px solid #ddd;padding-bottom:4px}table{border-collapse:collapse;width:100%;font-size:.95rem}th,td{border:1px solid #ddd;padding:6px 8px;text-align:right;vertical-align:top}th{background:#eee}a{color:#0a6b4b}.en{direction:ltr;text-align:left;margin-top:3em;border-top:2px solid #ccc;padding-top:1em}.en table th,.en table td{text-align:left}footer{color:#666;font-size:.9rem;margin-top:2em}</style></head>
 <body>
 <h1>سياسة الخصوصية — تطبيق «تزويد»</h1>
-<p>آخر تحديث: 2026-10-02</p>
+<p>آخر تحديث: 2026-10-10</p>
 
 <h2>من نحن</h2>
 <p>«تزويد» تطبيق معلوماتي مستقل (غير حكومي) يعرض حالة محطات الوقود في ليبيا. يقدّمه شركة «صدى النجاح للتحول الرقمي» (Sada Al-Najah Digital Transformation Company).</p>
 
 <h2>ما لا نجمعه</h2>
 <ul>
-<li>لا يتطلب التطبيق إنشاء حساب أو تسجيل دخول.</li>
-<li>لا نصل إلى جهات الاتصال.</li>
-<li>لا نصل إلى موقعك الجغرافي.</li>
-<li>لا نستخدم أي أدوات تتبّع أو إعلانات.</li>
+<li>لا يتطلب التطبيق إنشاء حساب أو تسجيل دخول، ولا نطلب اسمك أو رقم هاتفك أو بريدك.</li>
+<li>لا نصل إلى جهات الاتصال ولا إلى موقعك الجغرافي.</li>
+<li>لا نستخدم إعلانات ولا أدوات تتبّع، ولا نربط بياناتك ببيانات أطراف أخرى، ولا نبيعها.</li>
 </ul>
 
-<h2>ما الذي نجمعه</h2>
+<h2>ما الذي نجمعه ولماذا</h2>
+<p><strong>معرّف التثبيت العشوائي.</strong> يُنشئ التطبيق عند أول استخدام معرّفًا عشوائيًا (UUID) محفوظًا على جهازك. ليس مشتقًا من معرّفات Apple أو من رقم الجهاز، ويتغيّر إذا حذفت التطبيق وأعدت تثبيته. يُرسل إلى خادمنا فقط عندما تتفاعل مع خبر أو تشارك حالة محطة، وفي إصدارات التطبيق الحديثة عند تحميل الأخبار لعرض تفاعلك السابق، دائمًا داخل ترويسة الطلب أو متنه لا في عنوانه (الإصدارات الأقدم من التطبيق كانت تضعه أيضًا في عنوان طلب قراءة الأخبار). هذا المعرّف <em>ليس مجهولًا تمامًا</em>: لا يدل على اسمك، لكنه يربط تفاعلات تثبيتك الواحد ببعضها، وقد يرتبط بعنوان الشبكة (IP) في سجلات الخادم.</p>
 <ul>
-<li><strong>معرّف تثبيت عشوائي</strong> يُنشأ على جهازك، ويُستخدم لأداء وظائف التطبيق الأساسية (مثل تسجيل التفاعل مع الأخبار مرة واحدة لكل جهاز).</li>
-<li><strong>رمز الإشعارات (Firebase Cloud Messaging token)</strong> ويُستخدم فقط لإيصال الإشعارات الاختيارية، مثل فتح المحطات أو إغلاقها وتحديثات النشرة.</li>
+<li><strong>تفاعلات الأخبار (أعجبني / لم يعجبني).</strong> نحفظ المعرّف كما هو (غير مجزّأ) مع تفاعلك لنُظهر لك تفاعلك ولنحسب تفاعلًا واحدًا لكل تثبيت. تبقى هذه البيانات ما دام الخبر موجودًا وتُحذف عند حذف الخبر؛ لا توجد حاليًا مدة حذف تلقائية أخرى.</li>
+<li><strong>مساهمات حالة المحطات (اختيارية).</strong> عندما ترسل مساهمة نحفظ: المحطة، إجابتيك (مفتوحة/مغلقة، الازدحام) إن اخترتهما، ووقت المساهمة، مرتبطة بقيمة مجزّأة من المعرّف (HMAC بمفتاح سري). القيمة المجزّأة هي «اسم مستعار تقني» ثابت لتثبيتك: يربط مساهماتك ببعضها (لتحديث إجابتك بدل تكرارها ولتطبيق مهلة بين المساهمات وللتقييد عند الإساءة)، وليس إخفاءً كاملًا للهوية؛ وفي المقابل لا يكشف وحده من أنت ولا يمكن عكسه إلى المعرّف الأصلي دون المفتاح السري. تُعرض نتائج المساهمات للجميع مجمّعة دون أي معرّف، ولا تؤثر في حالة المحطة الرسمية. لا تُحسب نتيجة إلا بعد ثلاثة مساهمين على الأقل.</li>
+<li><strong>الوقاية من الإساءة.</strong> عند تجاوز حدود الإرسال أو عند تقييد مصدر مسيء من قِبل المشرفين نحفظ: تجزئة المعرّف، وتجزئة عنوان الشبكة (IP)، ونوع الحدث والمحطة والوقت، وسبب التقييد. يرى المشرفون رمزًا قصيرًا فقط، لا المعرّف ولا العنوان. تُسجَّل إجراءات المشرفين (استبعاد مساهمة، تقييد مصدر) مع السبب في سجل تدقيق.</li>
+<li><strong>بيانات تقنية في الخادم.</strong> عند كل طلب يستقبل خادمنا (ووسيط الاستضافة) عنوان الشبكة (IP) ونوع التطبيق وإصداره وعنوان الطلب. قد تظهر هذه البيانات في سجلات التشغيل: سجلات الوسيط العكسي (nginx) على الخادم تُدوَّر يوميًا وتُحفظ نحو 14 يومًا، أما سجلات تطبيق الخادم فلا توجد لها حاليًا مدة حذف تلقائية. بدءًا من هذا الإصدار لا يكتب تطبيق الخادم قيمة معرّف التثبيت في سجله (يُحجب من عناوين الطلبات)، وتطبيق iOS الحديث لا يرسله في العنوان؛ لكن الإصدارات الأقدم من التطبيق، وسجلات سبقت هذا التغيير، وسجلات الوسيط العكسي قد تحتوي المعرّف الخام مع عنوان الشبكة، وتبقى وفق مدد السجلات أعلاه.</li>
 </ul>
-<p>هذه البيانات غير مرتبطة باسمك أو هويتك، ولا نبيعها.</p>
+<p><strong>الإشعارات (اختيارية).</strong> إذا فعّلتها يسجّل التطبيق جهازك لدى خدمة Firebase Cloud Messaging من Google للاشتراك في موضوع إشعارات المحطات. يحتفظ Google برمز الإشعارات (مرتبطًا بمعرّف تثبيت Firebase)، ولا يصلان إلى خادمنا ولا نخزّنهما. يجمع Firebase لتشغيل الاشتراك: طراز الجهاز واللغة والمنطقة الزمنية وإصدار النظام ومعرّف التطبيق وإصداره، وتستقبل Google عنوان الشبكة، وفق سياساتها. لا نستخدم Firebase Analytics. يمكنك إيقاف الإشعارات من التطبيق أو من إعدادات iOS.</p>
+<p><strong>على جهازك فقط (لا يُرسل):</strong> تفضيل الإشعارات، وتفضيل «طلبات المساهمة»، وآخر محطة فتحت تفاصيلها (لنسألك أحيانًا «هل زرت هذه المحطة؟»). نفتح هذا السؤال فقط بناءً على ما فتحته في التطبيق ولا نعدّه دليلًا على زيارتك، ويمكنك تعطيله من «حول».</p>
+
+<h2>مدد الاحتفاظ</h2>
+<table><tr><th>البيانات</th><th>المدة</th></tr>
+<tr><td>مساهمات المحطات (المعرّف المجزّأ + الإجابات)</td><td>تُعرض 45 دقيقة ثم تُحذف تلقائيًا بعد 7 أيام</td></tr>
+<tr><td>أحداث مكافحة الإساءة (تجزئة المعرّف وتجزئة IP)</td><td>14 يومًا ثم تُحذف تلقائيًا</td></tr>
+<tr><td>تقييد مصدر</td><td>حتى انتهاء مدته أو رفعه من المشرف (يُحذف بعد الانتهاء)</td></tr>
+<tr><td>سجل تدقيق إجراءات المشرفين</td><td>لا توجد حاليًا مدة حذف تلقائية</td></tr>
+<tr><td>تفاعلات الأخبار (معرّف خام)</td><td>ما دام الخبر موجودًا، وتُحذف عند حذفه</td></tr>
+<tr><td>سجلات تشغيل الخادم (IP وعنوان الطلب)</td><td>الوسيط العكسي (nginx): نحو 14 يومًا؛ تطبيق الخادم: لا توجد حاليًا مدة حذف تلقائية</td></tr>
+<tr><td>رمز الإشعارات ومعرّف Firebase</td><td>لدى Google وفق سياساتها؛ يُزال عند إلغاء الاشتراك أو حذف التطبيق</td></tr></table>
 
 <h2>المشاركة مع أطراف أخرى</h2>
-<p>لا نشارك هذه البيانات مع أي طرف ثالث إلا مزوّدي الخدمة اللازمين لتشغيل التطبيق: Firebase / Google لتوصيل الإشعارات، وخادمنا الخاص (tazweed.saaa.cloud).</p>
+<p>لا نشارك بياناتك مع أي طرف إلا مزوّدي الخدمة اللازمين: Google (Firebase) لتوصيل الإشعارات، ومزوّد استضافة خوادم سحابية خارجي يشغّل خادمنا (tazweed.saaa.cloud). قد نفصح عن بيانات إذا طلب ذلك القانون.</p>
 
-<h2>التحكم في بياناتك</h2>
+<h2>تحكّمك في بياناتك وطلبات الخصوصية</h2>
 <ul>
-<li>يمكنك إيقاف الإشعارات في أي وقت من إعدادات iOS ← الإشعارات ← تزويد.</li>
-<li>يكفي حذف التطبيق من جهازك لإيقاف أي استخدام لمعرّف التثبيت ورمز الإشعارات.</li>
-<li>لطلب حذف البيانات المرتبطة بجهازك، تواصل معنا عبر الدعم أدناه.</li>
+<li>أوقف الإشعارات من التطبيق أو من إعدادات iOS ← الإشعارات ← تزويد.</li>
+<li>عطّل طلبات المساهمة من «حول»، أو لا تستخدم زر «كيف الوضع في المحطة؟» فلا تُرسل مساهمات.</li>
+<li>حذف التطبيق وإعادة تثبيته يُنشئ معرّفًا جديدًا لا يرتبط بالقديم.</li>
+<li>المساهمات وأحداث الإساءة تُحذف تلقائيًا في المدد أعلاه دون طلب.</li>
+<li>لا نوفّر حاليًا زر حذف داخل التطبيق. بما أن المعرّف لا يظهر لك ولا نستطيع ربط شخص بمعرّف تثبيته دون المعرّف نفسه، قد لا نتمكن من تحديد بيانات جهاز بعينه؛ إن راسلتنا بطلب خصوصية فسنردّ ونوضح ما يمكن تنفيذه فعليًا.</li>
 </ul>
 
 <h2>التواصل</h2>
-<p>الدعم عبر واتساب: <a href="https://wa.me/218922224420">+218 92 222 4420</a></p>
+<p>لطلبات الخصوصية والاستفسارات: الدعم عبر واتساب +218 92 222 4420.</p>
 
 <h2>تغييرات السياسة</h2>
-<p>قد نحدّث هذه السياسة، وسيظهر تاريخ آخر تحديث أعلاه.</p>
+<p>قد نحدّث هذه السياسة، وسيظهر تاريخ آخر تحديث أعلاه، وسننبّه داخل التطبيق عند أي تغيير جوهري في ما نجمعه.</p>
 
-<div class="en" id="en" lang="en" dir="ltr">
+<div class="en" id="en">
 <h1>Privacy Policy — "Tazweed" app</h1>
-<p>Last updated: 2026-10-02</p>
+<p>Last updated: 2026-10-10</p>
 <p>Tazweed is an independent, non-governmental informational app showing fuel station status in Libya, provided by Sada Al-Najah Digital Transformation Company.</p>
-<p><strong>We do not collect:</strong> accounts or logins, contacts, location, and we use no tracking or advertising.</p>
-<p><strong>We collect:</strong> a random install ID generated on your device, and a push-notification token (Firebase Cloud Messaging). They are used only to deliver optional notifications and for basic app function, are not linked to your name or identity, and are not sold. They are shared only with service providers: Firebase/Google (push delivery) and our own server (tazweed.saaa.cloud).</p>
-<p><strong>Your choices:</strong> disable notifications in iOS Settings; delete the app to stop all use of these identifiers; contact us to request deletion.</p>
-<p><strong>Contact (WhatsApp support):</strong> <a href="https://wa.me/218922224420">+218 92 222 4420</a></p>
+<h2>What we do not collect</h2>
+<p>No accounts, names, phone numbers or emails; no contacts; no location; no advertising or tracking, no linking with third-party data, and we do not sell data.</p>
+<h2>What we collect and why</h2>
+<p><strong>Random install ID.</strong> The app generates a random UUID stored on your device (not derived from Apple identifiers; it changes if you reinstall). It is sent to our server only when you react to a news item or submit a station report, and in current app versions when news is loaded to show your earlier reaction — always in a request header or body, never in the URL (older app versions also placed it in the news-reading URL). It is <em>not fully anonymous</em>: it does not identify your name, but it links one install's interactions together and may be associated with your network address (IP) in server logs.</p>
+<ul>
+<li><strong>News reactions:</strong> stored with the raw ID so we can show your reaction and count one per install. They are kept while the news item exists and are deleted when the item is deleted; there is currently no other automatic deletion period.</li>
+<li><strong>Station reports (optional):</strong> station, your answers (open/closed, congestion), time, linked to a keyed hash (HMAC) of the install ID. The hash is a stable technical pseudonym for your install: it links your reports to each other (to update rather than duplicate, to apply a cooldown, and to restrict abuse). It is not complete anonymisation; equally, on its own it does not reveal who you are and cannot be reversed to the original ID without the secret key. Results are shown to everyone only in aggregate, never with identifiers, and never change the official station status. A result needs at least three contributors.</li>
+<li><strong>Abuse prevention:</strong> when sending limits are exceeded or a source is restricted by moderators we keep a hash of the ID, a hash of the network address (IP), event type, station, time and restriction reason. Moderators see a short code only. Moderator actions (excluding a report, restricting a source) are recorded with a reason in an audit log.</li>
+<li><strong>Technical data on the server:</strong> each request exposes your IP, app type and version and the request URL to our server and hosting proxy; these may appear in operational logs: the reverse-proxy (nginx) logs on our server are rotated daily and kept for about 14 days, while application-server logs currently have no automatic deletion period. From this release our application server no longer writes install-ID values from request URLs to its log, and the current iOS app does not send it in the URL; older app versions, logs created before this change, and reverse-proxy logs may still contain the raw ID together with the network address, and they remain according to the log periods above.</li>
+</ul>
+<p><strong>Notifications (optional).</strong> If you turn them on, the app registers with Google's Firebase Cloud Messaging to subscribe to a station-notices topic. Google holds the push token (associated with a Firebase installation ID); they do not reach our server and we do not store them. Firebase collects device model, language, time zone, OS version, app identifier and version for topic subscription, and Google receives your IP, under its own policies. We do not use Firebase Analytics.</p>
+<p><strong>On your device only (not sent):</strong> notification preference, "contribution prompts" preference, and the last station whose details you opened (used to occasionally ask "did you visit this station?"; it is not treated as evidence of a visit; you can disable it under "About").</p>
+<h2>Retention</h2>
+<table><tr><th>Data</th><th>Period</th></tr>
+<tr><td>Station reports (hashed ID + answers)</td><td>Shown for 45 minutes; automatically deleted after 7 days</td></tr>
+<tr><td>Abuse events (hashed ID and IP)</td><td>Automatically deleted after 14 days</td></tr>
+<tr><td>Source restriction</td><td>Until it expires or a moderator lifts it</td></tr>
+<tr><td>Moderator audit log</td><td>No automatic deletion period currently</td></tr>
+<tr><td>News reactions (raw ID)</td><td>While the news item exists; deleted when it is deleted</td></tr>
+<tr><td>Server logs (IP, request URL)</td><td>Reverse proxy (nginx): about 14 days; application server: no automatic deletion period currently</td></tr>
+<tr><td>Push token and Firebase installation ID</td><td>Held by Google under its policies; removed when you unsubscribe or delete the app</td></tr></table>
+<h2>Sharing</h2>
+<p>Only with service providers needed to run the app: Google (Firebase) for notifications and a third-party cloud server hosting provider that runs our server (tazweed.saaa.cloud). We may disclose data if required by law.</p>
+<h2>Your choices and privacy requests</h2>
+<p>Turn off notifications in the app or iOS Settings; disable contribution prompts under "About" or simply don't use the report button; deleting and reinstalling the app creates a new ID unrelated to the old one; reports and abuse events are deleted automatically as above. We do not currently offer an in-app delete button; because the ID is not shown to you and we cannot link a person to an install ID without the ID itself, we may not be able to identify a specific device's data. If you send a privacy request we will reply and explain what can actually be done.</p>
+<p>Contact: WhatsApp support +218 92 222 4420.</p>
 </div>
 <footer>© شركة صدى النجاح للتحول الرقمي</footer>
 </body></html>
